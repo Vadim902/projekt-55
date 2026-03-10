@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 2s;
+    }
+    .container:hover {
+        width: 300px;
+        background-color: fuchsia;
+    }
+    .box1, .box2, .box3, .box4 {
+        width: 120px;
+        height: 120px;
+        background-color: violet;
+        margin: 10px;
+    }
+    .box1 {
+        transition: all 2s linear;
+    }
+    .box2 {
+        transition: all 2s ease;
+    }
+    .box3 {
+        transition: all 2s ease-in;
+    }
+    .box4 {
+        transition: all 2s ease-out;
+    }
+    .box1:hover, .box2:hover, .box3:hover, .box4:hover {
+        transform: translateX(200px);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">elo</div>
+
+    <div class="box1">linear</div>
+    <div class="box2">ease</div>
+    <div class="box3">ease-in</div>
+    <div class="box4">ease-out</div>
+</body>
+</html>
